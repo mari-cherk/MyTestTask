@@ -15,10 +15,7 @@ public class HomePage extends Page {
     //WebDriver driver;
 
     @FindBy(css = ".price")
-    List<WebElement> productsCurrency;
-
-    public List<String> currencySymbols = productsCurrency.stream().map(WebElement::getText).collect(Collectors.toList());
-
+    public List<WebElement> productsCurrency;
 
     @FindBy(css = ".ui-autocomplete-input")
     WebElement searchField;

@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class Page {
 
     public static final String browser = "chrome";
@@ -19,16 +21,16 @@ public class Page {
 
         if(browser.equals("firefox")) {
 
-            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\geckodriver.exe");
             driver = new FirefoxDriver();
         } else if(browser.equals("chrome")){
 
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
             driver = new ChromeDriver();
 
         } else if (browser.equals("ie")) {
 
-            System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }
 
@@ -36,6 +38,14 @@ public class Page {
         driver.manage().window().maximize();
         topNav = new TopNavigation(driver);
 
+    }
+
+    void waitFor(long mills) {
+        try {
+            TimeUnit.MILLISECONDS.sleep(mills);
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
     }
 
     public static void quitBrowser(){

@@ -47,7 +47,6 @@ public class SearchPage extends Page {
 
     public List checkPrices(){
 
-        //Thread.sleep(4000);
         waitFor(4000);
 
         List<Integer> priceOfFoundProducts = new ArrayList<>();

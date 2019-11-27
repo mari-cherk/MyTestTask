@@ -1,0 +1,20 @@
+22:51:42,288 DEBUG devpinoyLogger:34 - Launching Chrome
+22:51:45,369 DEBUG devpinoyLogger:44 - Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+22:51:49,509 DEBUG devpinoyLogger:46 - Maximizing the window
+22:51:49,613 DEBUG devpinoyLogger:42 - Getting the current currency
+22:51:49,632 DEBUG devpinoyLogger:42 - Getting the current currency
+22:51:59,978 DEBUG devpinoyLogger:54 - Clicking on an Element : Proxy element for: AjaxElementLocator 'By.xpath: //*[@class="currency-selector dropdown js-dropdown"]//*[@class="material-icons expand-more"]'
+22:52:25,721 DEBUG devpinoyLogger:54 - Clicking on an Element : Proxy element for: AjaxElementLocator 'By.linkText: USD $'
+22:52:25,721 DEBUG devpinoyLogger:58 - Changing the currency
+22:52:25,815 DEBUG devpinoyLogger:63 - Typing in an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> css selector: .ui-autocomplete-input] entered value as : dress
+22:53:43,725 DEBUG devpinoyLogger:54 - Clicking on an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> xpath: //*[@class='header-top']//*[@class='material-icons search']]
+22:53:43,766 DEBUG devpinoyLogger:39 - Getting the number of the search results: 7
+22:53:43,784 DEBUG devpinoyLogger:39 - Getting the number of the search results: 7
+22:53:43,833 DEBUG devpinoyLogger:42 - Getting the current currency
+22:53:43,851 DEBUG devpinoyLogger:42 - Getting the current currency
+22:53:43,918 DEBUG devpinoyLogger:54 - Clicking on an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> css selector: .material-icons.pull-xs-right]
+22:53:54,391 DEBUG devpinoyLogger:54 - Clicking on an Element : Proxy element for: AjaxElementLocator 'By.partialLinkText: Цене: от низкой к высокой'
+22:53:54,392 DEBUG devpinoyLogger:47 - Executing the sort from low to high
+22:53:58,774 DEBUG devpinoyLogger:73 - Collecting prices
+22:53:58,774 DEBUG devpinoyLogger:85 - Comparing prices
+22:53:59,404 DEBUG devpinoyLogger:80 - Leaving the browser

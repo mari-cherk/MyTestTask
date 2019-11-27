@@ -1,14 +1,17 @@
 package pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import static pages.Page.click;
 
 public class TopNavigation {
 
     WebDriver driver;
+    public static Logger log = Logger.getLogger("devpinoyLogger");
 
     @FindBy(css = ".expand-more._gray-darker.hidden-sm-down")
     public WebElement currency;
@@ -36,22 +39,23 @@ public class TopNavigation {
     public String getCurrency(){
 
         String currentCurrency = currency.getText().split(" ")[1];
+        log.debug("Getting the current currency");
 
         return currentCurrency;
     }
 
     public void changeCurrency(String currency){
 
-        currencyDropdown.click();
-        //System.out.println(topNavigation.eurCurrency.getText());
+        click(currencyDropdown);
 
         if(currency.equals("eur")){
-            eurCurrency.click();
+            click(eurCurrency);
         } else if(currency.equals("uah")){
-            uahCurrency.click();
+            click(uahCurrency);
         }else{
-            usdCurrency.click();
+            click(usdCurrency);
         }
+        log.debug("Changing the currency");
 
     }
 

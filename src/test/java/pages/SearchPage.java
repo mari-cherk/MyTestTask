@@ -36,13 +36,15 @@ public class SearchPage extends Page {
 
         String numberResultsString = totalNumberResults.getText().replaceAll("\\D+", "");
         int numberResults = Integer.parseInt(numberResultsString);
+        log.debug("Getting the number of the search results: " + numberResults);
         return numberResults;
     }
 
     public void setIncreaseSort() {
 
-        sortDropdown.click();
-        increaseItem.click();
+        click(sortDropdown);
+        click(increaseItem);
+        log.debug("Executing the sort from low to high");
     }
 
     public List checkPrices(){
@@ -68,6 +70,7 @@ public class SearchPage extends Page {
             }
 
         }
+        log.debug("Collecting prices");
         List<Boolean> priceCheck = new ArrayList<>();
 
         for(int i = 1; i < priceOfFoundProducts.size(); i++){
@@ -79,6 +82,8 @@ public class SearchPage extends Page {
                 priceCheck.add(false);
 
         }
+        log.debug("Comparing prices");
         return priceCheck;
+
     }
 }

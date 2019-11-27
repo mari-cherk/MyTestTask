@@ -1,18 +1,13 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 public class HomePage extends Page {
-
-    //WebDriver driver;
 
     @FindBy(css = ".price")
     public List<WebElement> productsCurrency;
@@ -25,7 +20,6 @@ public class HomePage extends Page {
 
     public HomePage(){
 
-        //this.driver = Page.driver;
         AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver,10);
         PageFactory.initElements(factory,this);
 
@@ -33,8 +27,8 @@ public class HomePage extends Page {
 
     public SearchPage searchByWord(String searchWord){
 
-        searchField.sendKeys(searchWord);
-        searchButton.click();
+        type(searchField,searchWord);
+        click(searchButton);
 
         return new SearchPage();
     }

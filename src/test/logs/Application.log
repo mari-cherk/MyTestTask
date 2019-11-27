@@ -1,0 +1,20 @@
+27/11/2019 22:51:42 devpinoyLogger Launching Chrome
+27/11/2019 22:51:45 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+27/11/2019 22:51:49 devpinoyLogger Maximizing the window
+27/11/2019 22:51:49 devpinoyLogger Getting the current currency
+27/11/2019 22:51:49 devpinoyLogger Getting the current currency
+27/11/2019 22:51:59 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.xpath: //*[@class="currency-selector dropdown js-dropdown"]//*[@class="material-icons expand-more"]'
+27/11/2019 22:52:25 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.linkText: USD $'
+27/11/2019 22:52:25 devpinoyLogger Changing the currency
+27/11/2019 22:52:25 devpinoyLogger Typing in an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> css selector: .ui-autocomplete-input] entered value as : dress
+27/11/2019 22:53:43 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> xpath: //*[@class='header-top']//*[@class='material-icons search']]
+27/11/2019 22:53:43 devpinoyLogger Getting the number of the search results: 7
+27/11/2019 22:53:43 devpinoyLogger Getting the number of the search results: 7
+27/11/2019 22:53:43 devpinoyLogger Getting the current currency
+27/11/2019 22:53:43 devpinoyLogger Getting the current currency
+27/11/2019 22:53:43 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> css selector: .material-icons.pull-xs-right]
+27/11/2019 22:53:54 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.partialLinkText: Цене: от низкой к высокой'
+27/11/2019 22:53:54 devpinoyLogger Executing the sort from low to high
+27/11/2019 22:53:58 devpinoyLogger Collecting prices
+27/11/2019 22:53:58 devpinoyLogger Comparing prices
+27/11/2019 22:53:59 devpinoyLogger Leaving the browser

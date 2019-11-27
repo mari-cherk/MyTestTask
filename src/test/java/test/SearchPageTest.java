@@ -3,26 +3,20 @@ package test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import pages.Page;
 import pages.SearchPage;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import static pages.Page.topNav;
 
 public class SearchPageTest {
-
-    @BeforeTest
+/*
+    @BeforeSuite
     public void setUp(){
 
         Page.initConfiguration();
-    }
+    }*/
 
     @Test
     public void siteSearch(){
@@ -49,7 +43,7 @@ public class SearchPageTest {
     }
 
 
-    @AfterTest
+    @AfterSuite
     public void tearDown(){
         if(Page.driver!=null){
             Page.quitBrowser();

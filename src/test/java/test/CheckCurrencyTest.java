@@ -1,16 +1,16 @@
 package test;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import pages.Page;
+
+import static pages.Page.log;
 import static pages.Page.topNav;
 
 public class CheckCurrencyTest {
 
-    @BeforeTest
+    @BeforeSuite
     public void setUp() {
 
         Page.initConfiguration();
@@ -28,12 +28,12 @@ public class CheckCurrencyTest {
 
     }
 
-
-    @AfterTest
+/*
+    @AfterSuite
     public void tearDown() {
         if (Page.driver != null) {
             Page.quitBrowser();
         }
 
-    }
+    }*/
 }

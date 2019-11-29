@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.testng.Reporter;
+
 import static pages.Page.click;
 
 public class TopNavigation {
@@ -40,6 +42,7 @@ public class TopNavigation {
 
         String currentCurrency = currency.getText().split(" ")[1];
         log.debug("Getting the current currency");
+        Reporter.log("Getting the current currency");
 
         return currentCurrency;
     }
@@ -56,6 +59,7 @@ public class TopNavigation {
             click(usdCurrency);
         }
         log.debug("Changing the currency");
+        Reporter.log("Changing the currency");
 
     }
 

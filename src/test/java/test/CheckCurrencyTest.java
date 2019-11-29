@@ -4,13 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.HomePage;
 import pages.Page;
-
-import static pages.Page.log;
 import static pages.Page.topNav;
 
 public class CheckCurrencyTest {
 
-    @BeforeSuite
+    @BeforeTest
     public void setUp() {
 
         Page.initConfiguration();
@@ -28,12 +26,12 @@ public class CheckCurrencyTest {
 
     }
 
-/*
-    @AfterSuite
+
+    @AfterTest
     public void tearDown() {
         if (Page.driver != null) {
             Page.quitBrowser();
         }
 
-    }*/
+    }
 }

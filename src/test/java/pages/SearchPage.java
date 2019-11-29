@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.testng.Reporter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +38,7 @@ public class SearchPage extends Page {
         String numberResultsString = totalNumberResults.getText().replaceAll("\\D+", "");
         int numberResults = Integer.parseInt(numberResultsString);
         log.debug("Getting the number of the search results: " + numberResults);
+        Reporter.log("Getting the number of the search results: " + numberResults);
         return numberResults;
     }
 
@@ -45,6 +47,7 @@ public class SearchPage extends Page {
         click(sortDropdown);
         click(increaseItem);
         log.debug("Executing the sort from low to high");
+        Reporter.log("Executing the sort from low to high");
     }
 
     public List checkPrices(){
@@ -71,6 +74,7 @@ public class SearchPage extends Page {
 
         }
         log.debug("Collecting prices");
+        Reporter.log("Collecting prices");
         List<Boolean> priceCheck = new ArrayList<>();
 
         for(int i = 1; i < priceOfFoundProducts.size(); i++){
@@ -83,6 +87,7 @@ public class SearchPage extends Page {
 
         }
         log.debug("Comparing prices");
+        Reporter.log("Comparing prices");
         return priceCheck;
 
     }

@@ -1,20 +1,24 @@
-22:51:42,288 DEBUG devpinoyLogger:34 - Launching Chrome
-22:51:45,369 DEBUG devpinoyLogger:44 - Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
-22:51:49,509 DEBUG devpinoyLogger:46 - Maximizing the window
-22:51:49,613 DEBUG devpinoyLogger:42 - Getting the current currency
-22:51:49,632 DEBUG devpinoyLogger:42 - Getting the current currency
-22:51:59,978 DEBUG devpinoyLogger:54 - Clicking on an Element : Proxy element for: AjaxElementLocator 'By.xpath: //*[@class="currency-selector dropdown js-dropdown"]//*[@class="material-icons expand-more"]'
-22:52:25,721 DEBUG devpinoyLogger:54 - Clicking on an Element : Proxy element for: AjaxElementLocator 'By.linkText: USD $'
-22:52:25,721 DEBUG devpinoyLogger:58 - Changing the currency
-22:52:25,815 DEBUG devpinoyLogger:63 - Typing in an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> css selector: .ui-autocomplete-input] entered value as : dress
-22:53:43,725 DEBUG devpinoyLogger:54 - Clicking on an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> xpath: //*[@class='header-top']//*[@class='material-icons search']]
-22:53:43,766 DEBUG devpinoyLogger:39 - Getting the number of the search results: 7
-22:53:43,784 DEBUG devpinoyLogger:39 - Getting the number of the search results: 7
-22:53:43,833 DEBUG devpinoyLogger:42 - Getting the current currency
-22:53:43,851 DEBUG devpinoyLogger:42 - Getting the current currency
-22:53:43,918 DEBUG devpinoyLogger:54 - Clicking on an Element : [[ChromeDriver: chrome on XP (435e1ece7cdeb78a355e5d976037eeed)] -> css selector: .material-icons.pull-xs-right]
-22:53:54,391 DEBUG devpinoyLogger:54 - Clicking on an Element : Proxy element for: AjaxElementLocator 'By.partialLinkText: Цене: от низкой к высокой'
-22:53:54,392 DEBUG devpinoyLogger:47 - Executing the sort from low to high
-22:53:58,774 DEBUG devpinoyLogger:73 - Collecting prices
-22:53:58,774 DEBUG devpinoyLogger:85 - Comparing prices
-22:53:59,404 DEBUG devpinoyLogger:80 - Leaving the browser
+22:47:39,448 DEBUG devpinoyLogger:36 - Launching Chrome
+22:47:41,334 DEBUG devpinoyLogger:48 - Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+22:47:45,463 DEBUG devpinoyLogger:51 - Maximizing the window
+22:47:50,533 DEBUG devpinoyLogger:36 - Launching Chrome
+22:47:52,396 DEBUG devpinoyLogger:48 - Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+22:47:56,520 DEBUG devpinoyLogger:51 - Maximizing the window
+22:47:56,609 DEBUG devpinoyLogger:44 - Getting the current currency
+22:47:56,627 DEBUG devpinoyLogger:44 - Getting the current currency
+22:48:06,935 DEBUG devpinoyLogger:60 - Clicking on an Element : Proxy element for: AjaxElementLocator 'By.xpath: //*[@class="currency-selector dropdown js-dropdown"]//*[@class="material-icons expand-more"]'
+22:48:28,386 DEBUG devpinoyLogger:60 - Clicking on an Element : Proxy element for: AjaxElementLocator 'By.linkText: USD $'
+22:48:38,743 DEBUG devpinoyLogger:61 - Changing the currency
+22:48:38,828 DEBUG devpinoyLogger:70 - Typing in an Element : [[ChromeDriver: chrome on XP (8464245c69f441fbc279ff62da2c6baa)] -> css selector: .ui-autocomplete-input] entered value as : dress
+22:48:41,285 DEBUG devpinoyLogger:60 - Clicking on an Element : [[ChromeDriver: chrome on XP (8464245c69f441fbc279ff62da2c6baa)] -> xpath: //*[@class='header-top']//*[@class='material-icons search']]
+22:48:41,363 DEBUG devpinoyLogger:40 - Getting the number of the search results: 7
+22:48:41,382 DEBUG devpinoyLogger:40 - Getting the number of the search results: 7
+22:48:41,433 DEBUG devpinoyLogger:44 - Getting the current currency
+22:48:41,449 DEBUG devpinoyLogger:44 - Getting the current currency
+22:48:41,513 DEBUG devpinoyLogger:60 - Clicking on an Element : [[ChromeDriver: chrome on XP (8464245c69f441fbc279ff62da2c6baa)] -> css selector: .material-icons.pull-xs-right]
+22:48:44,152 DEBUG devpinoyLogger:60 - Clicking on an Element : [[ChromeDriver: chrome on XP (8464245c69f441fbc279ff62da2c6baa)] -> partial link text: Цене: от низкой к высокой]
+22:48:44,173 DEBUG devpinoyLogger:49 - Executing the sort from low to high
+22:48:48,490 DEBUG devpinoyLogger:76 - Collecting prices
+22:48:48,490 DEBUG devpinoyLogger:89 - Comparing prices
+22:48:49,097 DEBUG devpinoyLogger:86 - Leaving the browser
+22:48:49,098 DEBUG devpinoyLogger:86 - Leaving the browser

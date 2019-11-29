@@ -11,12 +11,12 @@ import pages.SearchPage;
 import static pages.Page.topNav;
 
 public class SearchPageTest {
-/*
-    @BeforeSuite
+
+    @BeforeTest
     public void setUp(){
 
         Page.initConfiguration();
-    }*/
+    }
 
     @Test
     public void siteSearch(){
@@ -43,7 +43,7 @@ public class SearchPageTest {
     }
 
 
-    @AfterSuite
+    @AfterTest
     public void tearDown(){
         if(Page.driver!=null){
             Page.quitBrowser();

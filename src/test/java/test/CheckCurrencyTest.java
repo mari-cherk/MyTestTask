@@ -20,7 +20,6 @@ public class CheckCurrencyTest {
         HomePage home = new HomePage();
 
         Assert.assertTrue(home.productsCurrency.stream().anyMatch(x -> x.getText().contains(topNav.getCurrency())),"Wrong currency");
-
         System.out.println("The current currency is " + topNav.getCurrency());
         System.out.println("Correct currency");
 

@@ -28,28 +28,23 @@ public class Page {
             System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\geckodriver.exe");
             driver = new FirefoxDriver();
             log.debug("Launching Firefox");
-            Reporter.log("Launching Firefox");
         } else if(browser.equals("chrome")){
 
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
             driver = new ChromeDriver();
             log.debug("Launching Chrome");
-            Reporter.log("Launching Chrome");
 
         } else if (browser.equals("ie")) {
 
             System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\IEDriverServer.exe");
             driver = new InternetExplorerDriver();
             log.debug("Launching IE");
-            Reporter.log("Launching IE");
         }
 
         driver.get(testsiteurl);
         log.debug("Navigated to " + testsiteurl);
-        Reporter.log("Navigated to " + testsiteurl);
         driver.manage().window().maximize();
         log.debug("Maximizing the window");
-        Reporter.log("Maximizing the window");
         topNav = new TopNavigation(driver);
 
     }
@@ -84,6 +79,5 @@ public class Page {
 
         driver.quit();
         log.debug("Leaving the browser");
-        Reporter.log("Leaving the browser");
     }
 }

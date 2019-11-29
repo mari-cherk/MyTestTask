@@ -41,8 +41,8 @@ public class TopNavigation {
     public String getCurrency(){
 
         String currentCurrency = currency.getText().split(" ")[1];
-        log.debug("Getting the current currency");
-        Reporter.log("Getting the current currency");
+        log.debug("Getting the current currency: " + currentCurrency);
+        Reporter.log("Getting the current currency: "+ currentCurrency);
 
         return currentCurrency;
     }

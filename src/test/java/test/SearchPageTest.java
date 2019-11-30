@@ -37,8 +37,10 @@ public class SearchPageTest {
         search.setIncreaseSort();
 
         search.checkPrices().forEach(x -> Assert.assertEquals(x, true, "Wrong sort"));
-
         System.out.println("Correct sort");
+
+        search.checkDiscount().forEach(x -> Assert.assertEquals(x, true, "Wrong sort"));
+        System.out.println("Correct discounts");
 
     }
 

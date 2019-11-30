@@ -1,5 +1,6 @@
 package pages;
 
+import org.decimal4j.util.DoubleRounder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,6 +28,12 @@ public class SearchPage extends Page {
     @FindBy(css = ".product-description")
     List<WebElement> productBlocks;
 
+    @FindBy(css = ".thumbnail-container")
+    List<WebElement> productContainers;
+
+    //@FindBy(css = ".discount-percentage");
+    //WebElement discount;
+
     public SearchPage() {
 
         AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
@@ -48,11 +55,13 @@ public class SearchPage extends Page {
         click(increaseItem);
         log.debug("Executing the sort from low to high");
         Reporter.log("Executing the sort from low to high");
-    }
-
-    public List checkPrices(){
 
         waitFor(4000);
+    }
+
+    public List checkPrices() {
+
+        //waitFor(4000);
 
         List<Integer> priceOfFoundProducts = new ArrayList<>();
 
@@ -77,9 +86,9 @@ public class SearchPage extends Page {
         Reporter.log("Collecting prices");
         List<Boolean> priceCheck = new ArrayList<>();
 
-        for(int i = 1; i < priceOfFoundProducts.size(); i++){
+        for (int i = 1; i < priceOfFoundProducts.size(); i++) {
 
-            if(priceOfFoundProducts.get(i) >= priceOfFoundProducts.get(i - 1)){
+            if (priceOfFoundProducts.get(i) >= priceOfFoundProducts.get(i - 1)) {
 
                 priceCheck.add(true);
             } else
@@ -89,6 +98,40 @@ public class SearchPage extends Page {
         log.debug("Comparing prices");
         Reporter.log("Comparing prices");
         return priceCheck;
+
+    }
+
+    public List checkDiscount() {
+
+        List<Boolean> discountsCheck = new ArrayList<>();
+
+        for (WebElement productContainer : productContainers) {
+
+            if (productContainer.findElements(By.className("regular-price")).size() > 0) {
+
+                int percent = Integer.parseInt(productContainer.findElement(By.className("discount-percentage")).getText().replaceAll("\\D", ""));
+                String oldpriceString = productContainer.findElement(By.className("regular-price")).getText();
+                double oldPrice = Double.parseDouble(oldpriceString.substring(0, oldpriceString.length() - 1).replace(",", "."));
+                String newPriceString = productContainer.findElement(By.className("price")).getText();
+                double newPrice = Double.parseDouble(newPriceString.substring(0, oldpriceString.length() - 1).replace(",", "."));
+                double culNewPriceLong = oldPrice - oldPrice * percent / 100;
+                double culNewPrice = DoubleRounder.round(culNewPriceLong, 2);
+                if (newPrice == culNewPrice) {
+
+
+                    discountsCheck.add(true);
+                } else {
+                    discountsCheck.add(false);
+                }
+                System.out.println(oldPrice + " - " + oldPrice + " * " + percent + " /100 = " + newPrice);
+
+            }
+        }
+            log.debug("Calculation of discounts");
+            Reporter.log("Calculation of discounts");
+
+        return discountsCheck;
+
 
     }
 }

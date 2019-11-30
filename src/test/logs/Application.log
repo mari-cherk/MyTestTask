@@ -1,24 +1,25 @@
-29/11/2019 23:02:09 devpinoyLogger Launching Chrome
-29/11/2019 23:02:12 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
-29/11/2019 23:02:16 devpinoyLogger Maximizing the window
-29/11/2019 23:02:16 devpinoyLogger Getting the current currency: ?
-29/11/2019 23:02:16 devpinoyLogger Getting the current currency: ?
-29/11/2019 23:02:17 devpinoyLogger Leaving the browser
-29/11/2019 23:02:22 devpinoyLogger Launching Chrome
-29/11/2019 23:02:27 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
-29/11/2019 23:02:31 devpinoyLogger Maximizing the window
-29/11/2019 23:02:41 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.xpath: //*[@class="currency-selector dropdown js-dropdown"]//*[@class="material-icons expand-more"]'
-29/11/2019 23:03:05 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.linkText: USD $'
-29/11/2019 23:03:15 devpinoyLogger Changing the currency
-29/11/2019 23:03:15 devpinoyLogger Typing in an Element : [[ChromeDriver: chrome on XP (a6c15784d984d8eeddcafeb10483d0be)] -> css selector: .ui-autocomplete-input] entered value as : dress
-29/11/2019 23:03:17 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (a6c15784d984d8eeddcafeb10483d0be)] -> xpath: //*[@class='header-top']//*[@class='material-icons search']]
-29/11/2019 23:03:17 devpinoyLogger Getting the number of the search results: 7
-29/11/2019 23:03:17 devpinoyLogger Getting the number of the search results: 7
-29/11/2019 23:03:17 devpinoyLogger Getting the current currency: $
-29/11/2019 23:03:17 devpinoyLogger Getting the current currency: $
-29/11/2019 23:03:17 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (a6c15784d984d8eeddcafeb10483d0be)] -> css selector: .material-icons.pull-xs-right]
-29/11/2019 23:03:18 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (a6c15784d984d8eeddcafeb10483d0be)] -> partial link text: Цене: от низкой к высокой]
-29/11/2019 23:03:18 devpinoyLogger Executing the sort from low to high
-29/11/2019 23:03:22 devpinoyLogger Collecting prices
-29/11/2019 23:03:22 devpinoyLogger Comparing prices
-29/11/2019 23:03:23 devpinoyLogger Leaving the browser
+30/11/2019 21:59:12 devpinoyLogger Launching Chrome
+30/11/2019 21:59:14 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+30/11/2019 21:59:18 devpinoyLogger Maximizing the window
+30/11/2019 21:59:18 devpinoyLogger Getting the current currency: ?
+30/11/2019 21:59:18 devpinoyLogger Getting the current currency: ?
+30/11/2019 21:59:19 devpinoyLogger Leaving the browser
+30/11/2019 21:59:24 devpinoyLogger Launching Chrome
+30/11/2019 21:59:26 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+30/11/2019 21:59:30 devpinoyLogger Maximizing the window
+30/11/2019 21:59:40 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.xpath: //*[@class="currency-selector dropdown js-dropdown"]//*[@class="material-icons expand-more"]'
+30/11/2019 22:00:03 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.linkText: USD $'
+30/11/2019 22:00:13 devpinoyLogger Changing the currency
+30/11/2019 22:00:13 devpinoyLogger Typing in an Element : [[ChromeDriver: chrome on XP (53fc6a4d7758eb6f4525a252b2d63cc3)] -> css selector: .ui-autocomplete-input] entered value as : dress
+30/11/2019 22:00:15 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (53fc6a4d7758eb6f4525a252b2d63cc3)] -> xpath: //*[@class='header-top']//*[@class='material-icons search']]
+30/11/2019 22:00:15 devpinoyLogger Getting the number of the search results: 7
+30/11/2019 22:00:15 devpinoyLogger Getting the number of the search results: 7
+30/11/2019 22:00:15 devpinoyLogger Getting the current currency: $
+30/11/2019 22:00:15 devpinoyLogger Getting the current currency: $
+30/11/2019 22:00:15 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (53fc6a4d7758eb6f4525a252b2d63cc3)] -> css selector: .material-icons.pull-xs-right]
+30/11/2019 22:00:17 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (53fc6a4d7758eb6f4525a252b2d63cc3)] -> partial link text: Цене: от низкой к высокой]
+30/11/2019 22:00:17 devpinoyLogger Executing the sort from low to high
+30/11/2019 22:00:21 devpinoyLogger Collecting prices
+30/11/2019 22:00:21 devpinoyLogger Comparing prices
+30/11/2019 22:00:22 devpinoyLogger Calculation of discounts
+30/11/2019 22:00:22 devpinoyLogger Leaving the browser

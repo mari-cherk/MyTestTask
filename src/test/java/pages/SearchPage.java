@@ -22,7 +22,7 @@ public class SearchPage extends Page {
     @FindBy(css = ".material-icons.pull-xs-right")
     WebElement sortDropdown;
 
-    @FindBy(partialLinkText = "Цене: от низкой к высокой")
+    @FindBy(xpath = "//*[@class='dropdown-menu']/a[4]")
     WebElement increaseItem;
 
     @FindBy(css = ".product-description")
@@ -31,107 +31,77 @@ public class SearchPage extends Page {
     @FindBy(css = ".thumbnail-container")
     List<WebElement> productContainers;
 
-    //@FindBy(css = ".discount-percentage");
-    //WebElement discount;
-
     public SearchPage() {
-
         AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(driver, 10);
         PageFactory.initElements(factory, this);
     }
 
     public int getNumberResults() {
-
-        String numberResultsString = totalNumberResults.getText().replaceAll("\\D+", "");
-        int numberResults = Integer.parseInt(numberResultsString);
-        log.debug("Getting the number of the search results: " + numberResults);
-        Reporter.log("Getting the number of the search results: " + numberResults);
+        int numberResults = Integer.parseInt(totalNumberResults.getText().replaceAll("\\D+", ""));
+        //int numberResults = Integer.parseInt(numberResultsString);
+        log.debug(numberResults + " search results are get");
+        Reporter.log(numberResults + " search results are get");
         return numberResults;
     }
 
     public void setIncreaseSort() {
-
-        click(sortDropdown);
-        click(increaseItem);
-        log.debug("Executing the sort from low to high");
-        Reporter.log("Executing the sort from low to high");
-
+        sortDropdown.click();
+        log.debug("The Sort dropdown is expanded");
+        Reporter.log("The Sort dropdown is expanded");
+        increaseItem.click();
+        log.debug("The sort from low to high is chosen");
+        Reporter.log("The sort from low to high is chosen");
         waitFor(4000);
     }
 
     public List checkPrices() {
-
-        //waitFor(4000);
-
         List<Integer> priceOfFoundProducts = new ArrayList<>();
-
         for (WebElement productBlock : productBlocks) {
-
             if (productBlock.findElements(By.className("regular-price")).size() > 0) {
-
-                String price = productBlock.findElement(By.className("regular-price")).getText().replaceAll("\\D+", "");
-                Integer priceint = Integer.parseInt(price);
-
+                Integer priceint = Integer.parseInt(productBlock.findElement(By.className("regular-price")).getText().replaceAll("\\D+", ""));
+                //Integer priceint = Integer.parseInt(price);
                 priceOfFoundProducts.add(priceint);
             } else {
-
-                String price = productBlock.findElement(By.className("price")).getText().replaceAll("\\D+", "");
-                Integer priceint = Integer.parseInt(price);
-
+                Integer priceint = Integer.parseInt(productBlock.findElement(By.className("price")).getText().replaceAll("\\D+", ""));
+                //Integer priceint = Integer.parseInt(price);
                 priceOfFoundProducts.add(priceint);
             }
-
         }
-        log.debug("Collecting prices");
-        Reporter.log("Collecting prices");
+        log.debug("Displayed prices and discounts are compared");
+        Reporter.log("Displayed prices and discounts are compared");
         List<Boolean> priceCheck = new ArrayList<>();
-
         for (int i = 1; i < priceOfFoundProducts.size(); i++) {
-
             if (priceOfFoundProducts.get(i) >= priceOfFoundProducts.get(i - 1)) {
-
                 priceCheck.add(true);
             } else
                 priceCheck.add(false);
-
         }
-        log.debug("Comparing prices");
-        Reporter.log("Comparing prices");
+        log.debug("The order of prices is checked");
+        Reporter.log("The order of prices is checked");
         return priceCheck;
-
     }
 
     public List checkDiscount() {
-
         List<Boolean> discountsCheck = new ArrayList<>();
-
         for (WebElement productContainer : productContainers) {
-
             if (productContainer.findElements(By.className("regular-price")).size() > 0) {
-
                 int percent = Integer.parseInt(productContainer.findElement(By.className("discount-percentage")).getText().replaceAll("\\D", ""));
-                String oldpriceString = productContainer.findElement(By.className("regular-price")).getText();
+                String oldpriceString = (productContainer.findElement(By.className("regular-price")).getText());
                 double oldPrice = Double.parseDouble(oldpriceString.substring(0, oldpriceString.length() - 1).replace(",", "."));
                 String newPriceString = productContainer.findElement(By.className("price")).getText();
                 double newPrice = Double.parseDouble(newPriceString.substring(0, oldpriceString.length() - 1).replace(",", "."));
                 double culNewPriceLong = oldPrice - oldPrice * percent / 100;
                 double culNewPrice = DoubleRounder.round(culNewPriceLong, 2);
                 if (newPrice == culNewPrice) {
-
-
                     discountsCheck.add(true);
                 } else {
                     discountsCheck.add(false);
                 }
                 System.out.println(oldPrice + " - " + oldPrice + " * " + percent + " /100 = " + newPrice);
-
             }
         }
-            log.debug("Calculation of discounts");
-            Reporter.log("Calculation of discounts");
-
+        log.debug("Discounts are calculated");
+        Reporter.log("Discounts are calculated");
         return discountsCheck;
-
-
     }
 }

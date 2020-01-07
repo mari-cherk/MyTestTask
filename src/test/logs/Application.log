@@ -1,25 +1,21 @@
-30/11/2019 21:59:12 devpinoyLogger Launching Chrome
-30/11/2019 21:59:14 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
-30/11/2019 21:59:18 devpinoyLogger Maximizing the window
-30/11/2019 21:59:18 devpinoyLogger Getting the current currency: ?
-30/11/2019 21:59:18 devpinoyLogger Getting the current currency: ?
-30/11/2019 21:59:19 devpinoyLogger Leaving the browser
-30/11/2019 21:59:24 devpinoyLogger Launching Chrome
-30/11/2019 21:59:26 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
-30/11/2019 21:59:30 devpinoyLogger Maximizing the window
-30/11/2019 21:59:40 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.xpath: //*[@class="currency-selector dropdown js-dropdown"]//*[@class="material-icons expand-more"]'
-30/11/2019 22:00:03 devpinoyLogger Clicking on an Element : Proxy element for: AjaxElementLocator 'By.linkText: USD $'
-30/11/2019 22:00:13 devpinoyLogger Changing the currency
-30/11/2019 22:00:13 devpinoyLogger Typing in an Element : [[ChromeDriver: chrome on XP (53fc6a4d7758eb6f4525a252b2d63cc3)] -> css selector: .ui-autocomplete-input] entered value as : dress
-30/11/2019 22:00:15 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (53fc6a4d7758eb6f4525a252b2d63cc3)] -> xpath: //*[@class='header-top']//*[@class='material-icons search']]
-30/11/2019 22:00:15 devpinoyLogger Getting the number of the search results: 7
-30/11/2019 22:00:15 devpinoyLogger Getting the number of the search results: 7
-30/11/2019 22:00:15 devpinoyLogger Getting the current currency: $
-30/11/2019 22:00:15 devpinoyLogger Getting the current currency: $
-30/11/2019 22:00:15 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (53fc6a4d7758eb6f4525a252b2d63cc3)] -> css selector: .material-icons.pull-xs-right]
-30/11/2019 22:00:17 devpinoyLogger Clicking on an Element : [[ChromeDriver: chrome on XP (53fc6a4d7758eb6f4525a252b2d63cc3)] -> partial link text: Цене: от низкой к высокой]
-30/11/2019 22:00:17 devpinoyLogger Executing the sort from low to high
-30/11/2019 22:00:21 devpinoyLogger Collecting prices
-30/11/2019 22:00:21 devpinoyLogger Comparing prices
-30/11/2019 22:00:22 devpinoyLogger Calculation of discounts
-30/11/2019 22:00:22 devpinoyLogger Leaving the browser
+07/01/2020 17:58:12 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+07/01/2020 17:58:16 devpinoyLogger Maximizing the window
+07/01/2020 17:58:16 devpinoyLogger ? is get as current currency
+07/01/2020 17:58:16 devpinoyLogger ? is get as current currency
+07/01/2020 17:58:17 devpinoyLogger The browser is left
+07/01/2020 17:58:24 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+07/01/2020 17:58:28 devpinoyLogger Maximizing the window
+07/01/2020 17:58:28 devpinoyLogger The currency dropdown is expanded
+07/01/2020 17:58:30 devpinoyLogger The USD currency is chosen
+07/01/2020 17:58:30 devpinoyLogger dress is typed in the search field
+07/01/2020 17:58:31 devpinoyLogger The search button is clicked
+07/01/2020 17:58:31 devpinoyLogger 7 search results are get
+07/01/2020 17:58:31 devpinoyLogger 7 search results are get
+07/01/2020 17:58:32 devpinoyLogger $ is get as current currency
+07/01/2020 17:58:32 devpinoyLogger $ is get as current currency
+07/01/2020 17:58:32 devpinoyLogger The Sort dropdown is expanded
+07/01/2020 17:58:32 devpinoyLogger The sort from low to high is chosen
+07/01/2020 17:58:36 devpinoyLogger Displayed prices and discounts are compared
+07/01/2020 17:58:36 devpinoyLogger The order of prices is checked
+07/01/2020 17:58:36 devpinoyLogger Discounts are calculated
+07/01/2020 17:58:37 devpinoyLogger The browser is left

@@ -9,12 +9,14 @@
     </listeners>
 
     <test name="CheckCurrency">
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="test.CheckCurrencyTest"/>
         </classes>
     </test>
 
     <test name="SiteSearch">
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="test.SearchPageTest"/>
         </classes>

@@ -1,21 +1,21 @@
-07/01/2020 17:58:12 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
-07/01/2020 17:58:16 devpinoyLogger Maximizing the window
-07/01/2020 17:58:16 devpinoyLogger ? is get as current currency
-07/01/2020 17:58:16 devpinoyLogger ? is get as current currency
-07/01/2020 17:58:17 devpinoyLogger The browser is left
-07/01/2020 17:58:24 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
-07/01/2020 17:58:28 devpinoyLogger Maximizing the window
-07/01/2020 17:58:28 devpinoyLogger The currency dropdown is expanded
-07/01/2020 17:58:30 devpinoyLogger The USD currency is chosen
-07/01/2020 17:58:30 devpinoyLogger dress is typed in the search field
-07/01/2020 17:58:31 devpinoyLogger The search button is clicked
-07/01/2020 17:58:31 devpinoyLogger 7 search results are get
-07/01/2020 17:58:31 devpinoyLogger 7 search results are get
-07/01/2020 17:58:32 devpinoyLogger $ is get as current currency
-07/01/2020 17:58:32 devpinoyLogger $ is get as current currency
-07/01/2020 17:58:32 devpinoyLogger The Sort dropdown is expanded
-07/01/2020 17:58:32 devpinoyLogger The sort from low to high is chosen
-07/01/2020 17:58:36 devpinoyLogger Displayed prices and discounts are compared
-07/01/2020 17:58:36 devpinoyLogger The order of prices is checked
-07/01/2020 17:58:36 devpinoyLogger Discounts are calculated
-07/01/2020 17:58:37 devpinoyLogger The browser is left
+07/01/2020 18:33:20 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+07/01/2020 18:33:24 devpinoyLogger The window is maximized
+07/01/2020 18:33:24 devpinoyLogger ? is get as current currency
+07/01/2020 18:33:24 devpinoyLogger ? is get as current currency
+07/01/2020 18:33:24 devpinoyLogger The browser is left
+07/01/2020 18:33:32 devpinoyLogger Navigated to http://prestashop-automation.qatestlab.com.ua/ru/
+07/01/2020 18:33:36 devpinoyLogger The window is maximized
+07/01/2020 18:33:36 devpinoyLogger The currency dropdown is expanded
+07/01/2020 18:33:39 devpinoyLogger The USD currency is chosen
+07/01/2020 18:33:39 devpinoyLogger dress is typed in the search field
+07/01/2020 18:33:40 devpinoyLogger The search button is clicked
+07/01/2020 18:33:40 devpinoyLogger 7 search results are get
+07/01/2020 18:33:40 devpinoyLogger 7 search results are get
+07/01/2020 18:33:40 devpinoyLogger $ is get as current currency
+07/01/2020 18:33:40 devpinoyLogger $ is get as current currency
+07/01/2020 18:33:40 devpinoyLogger The Sort dropdown is expanded
+07/01/2020 18:33:40 devpinoyLogger The sort from low to high is chosen
+07/01/2020 18:33:45 devpinoyLogger Displayed prices and discounts are compared
+07/01/2020 18:33:45 devpinoyLogger The order of prices is checked
+07/01/2020 18:33:45 devpinoyLogger Discounts are calculated
+07/01/2020 18:33:46 devpinoyLogger The browser is left
